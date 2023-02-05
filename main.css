@@ -5,7 +5,7 @@
 }
 
 header {
-    max-width: 667;
+    max-width: 375;
     background-color: rgba(245, 222, 179, 0.514);
 }
 
@@ -17,24 +17,29 @@ header {
     justify-content: center;
 }
 
+h1 {
+    font-size: 20px;
+    margin-left: 3px;
+}
+
 .container-header nav {
     text-align: left;
     float: left;
-    margin: 16px 16px 0 0;
+    margin: 9px 4px 0 0;
     text-decoration-line: none;
 }
 
 ul {
     display: flex;
-    padding-inline-start: 26px;
-    font-size: 16px;
+    padding-inline-start: 13px;
+    font-size: 10px;
     font-weight: bold;
     
 }
 
 li {
     list-style: none;
-    margin-right: 16px;
+    margin-right: 8px;
 }
 
 a {
@@ -47,6 +52,6 @@ a {
 }
 
 .container-header img {
-    height: 30px;
-    margin-top: 21px;
+    height: 20px;
+    margin-top: 13px;
 }

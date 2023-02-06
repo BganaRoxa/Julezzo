@@ -1,5 +1,8 @@
 $(document).ready(function(){
     $("#carousel-images").slick({
-        autoplay: true
+        autoplay: true,
+        arrows: false
+        
     })
+    
 })

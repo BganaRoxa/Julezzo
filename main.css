@@ -66,15 +66,17 @@ html {
 #carousel-images img {
     height: 250px;
     width: 375px;
-    margin-bottom: 16px;
+    margin-bottom: 40px;
 }
 
 .sobre,
-.nossas-lojas {
+.nossas-lojas,
+.sobre-2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: justify;
     max-width: 375px;
+    margin: 0 auto;
 }
 
 h3 {
@@ -84,27 +86,85 @@ h3 {
 .sobre p,
 .sobre-2 p {
     margin: 0 2px 0 0;
-    font-size: 10px;
+    font-size: 11px;
     text-align: justify;
 }
 section img {
-    height: 122px;
+    height: 126px;
     padding: 0 10px 2px 0;
 }
 
 .sobre-2{
-    margin-bottom: 16px;
+    margin-bottom: 40px;
+    display: block;
 }
 
 .nossas-lojas {
     justify-content: flex-start;
+    padding-left: 8px;
+    margin-bottom: 40px;
 }
 
 .nossas-lojas img {
-    margin-left: 4px;
+    margin-left: 8px;
+    padding-right: 8px;
 }
 
 .nossas-lojas select {
     font-size: 10px;
-    margin: 20px 30px 0 30px;
+    margin: 20px 30px 0 5px;
+}
+
+.container-locais {
+    margin-left: 10px;
+}
+
+.trabalhe-conosco {
+    justify-content: center;
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+h4 {
+    margin: 16px 0 16px 0;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    font-size: 12px;
+}
+
+.form-campo-linha-1,
+.form-campo-linha-2 {
+    display: block;
+    margin-bottom: 6px;
+    width: 100%;
+    max-width: 375px;
+    font-size: 11px;
+}
+
+.form-campo-linha-1 label,
+.form-campo-linha-2 label,
+.mensagem label  {
+    display: block;
+    width: 370px;
+    margin-bottom: 3px;
+    font-size: 11px;
+}
+
+.form-campo-linha-1 input,
+.form-campo-linha-2 input {
+    width: 100%;
+    display: flex;
+    padding: 3px;
+}
+
+textarea {
+    resize: none;
+    width: 370px;
+    height: 150px;
+    font-size: 11px;
 }

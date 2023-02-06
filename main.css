@@ -34,12 +34,15 @@ ul {
     padding-inline-start: 13px;
     font-size: 10px;
     font-weight: bold;
-    
 }
 
 li {
     list-style: none;
     margin-right: 8px;
+}
+
+#outlet {
+    color: red;
 }
 
 a {
@@ -54,4 +57,13 @@ a {
 .container-header img {
     height: 20px;
     margin-top: 13px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+#carousel-images img {
+    height: 375px;
+    width: 250px;
 }

@@ -207,7 +207,9 @@ form button:hover {
     font-size: 14px;
 }
 
-.sapatos h3 {
+.sapatos h3,
+.bolsas h3,
+.outlet h3 {
     text-align: left;
     font-size: 14px;
     margin-bottom: 16px;
@@ -218,7 +220,9 @@ form button:hover {
     font-size: 11px;
 }
 
-.container-sapatos{
+.container-sapatos,
+.container-bolsas,
+.container-outlet {
     max-width: 375px;
     margin: 0 auto;
     justify-content: center;

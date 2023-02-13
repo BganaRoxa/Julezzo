@@ -12,28 +12,37 @@
     <style>
         @media screen and (max-width: 640px){
             .sobre img {
-                width: 100%;
+                width: 95%;
                 margin-bottom: 1em;
             }
-            .sobre h3 {
+            h3 {
                 font-size: 0.7em;
             }
             
             .sobre p {
                 font-size: 0.5em;
+                margin: 0 1em;
+            }
+
+            .sobre {
+                flex-wrap: wrap;
             }
         }
 
         @media screen and (min-width: 641px) {
-            .sobre img,
-            .sobre p,
-            .sobre h3,
-            .sobre {
-                width: 50%;
-                display: flex;
-            }
             .sobre {
                 flex-direction: row;
+                max-width: 95%;
+            }
+
+            .sobre img {
+                object-fit: cover;
+                max-width: 50%;
+                margin: 0 1em;
+            }
+
+            .nossas-lojas {
+                max-width: 95%;
             }
 
         }
@@ -59,20 +68,31 @@
         </div>
     </header>
     <div id="carousel-images">
-        <img src="./images/sale1.png" alt="Imagem de ofertas com bolsa">
-        <img src="./images/sale2.png" alt="Imagem de ofertas com sapato">
+        <img src="./images/carousel1.png" alt="Imagens de bolsas e sapatos com a tarja da promoção">
+        <img src="./images/carousel2.png" alt="Imagem de 50% off mais tarja da promoção">
+        <img src="./images/carousel3.png" alt="Imagem de rasteirinha com a informação da promoção">
+        <img src="./images/carousel4.png" alt="Imagem de bolsa com a informação da promoção">
     </div>
     <section class="sobre">
         <img src="./images/loja.jpg" alt="Imagem da loja de sapato">
         <div class="container-sobre">
             <h3>Sobre a loja</h3>
             <hr size="1" width="100%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolor ut necessitatibus eos vitae, ipsa minus consequuntur labore tenetur a tempora quisquam libero impedit explicabo enim ratione esse. Voluptatem, maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta molestias animi labore tempore recusandae iste dolorem. Excepturi ab ducimus, delectus perspiciatis quibusdam numquam officia, reprehenderit, nobis esse ea rerum unde.</p>
-            <hr size="1" width="100%">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolor ut necessitatibus eos vitae, 
+                ipsa minus consequuntur labore tenetur a tempora quisquam libero impedit explicabo enim ratione esse. 
+                Voluptatem, maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta molestias animi 
+                labore tempore recusandae iste dolorem. Excepturi ab ducimus, delectus perspiciatis quibusdam numquam 
+                officia, reprehenderit, nobis esse ea rerum unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Corrupti dolor ut necessitatibus eos vitae, ipsa minus consequuntur labore tenetur a tempora quisquam 
+                libero impedit explicabo enim ratione esse. 
+                Voluptatem, maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta molestias animi 
+                labore tempore recusandae iste dolorem. Excepturi ab ducimus, delectus perspiciatis quibusdam numquam 
+                officia, reprehenderit, nobis esse ea rerum unde.</p>
+            
         </div>
     </section>
+    <hr size="1" width="95%">
     <section class="nossas-lojas">
-        <img src="./images/brasil.png" alt="Mapa do Brasil">
         <div class="container-locais">
             <h3>Encontre uma de nossas lojas</h3>
             <select id="estado" name="estado">
@@ -91,6 +111,7 @@
                 <option value="SP">São Paulo</option>
             </select>
         </div>
+        <img src="./images/brasil.png" alt="Mapa do Brasil">
     </section>
     <section class="titulos">
         <hr size="1" width="100%">

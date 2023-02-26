@@ -1,275 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@800&family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
-    <title>JULEZZO</title>
-    <style>
-        @media screen and (max-width: 640px){
-            .sobre img {
-                width: 95%;
-                margin-bottom: 1em;
-            }
-            h3 {
-                font-size: 0.7em;
-            }
-            
-            .sobre p {
-                font-size: 0.5em;
-                margin: 0 1em;
-            }
-
-            .sobre {
-                flex-wrap: wrap;
-            }
-        }
-
-        @media screen and (min-width: 641px) {
-            .sobre {
-                flex-direction: row;
-                max-width: 95%;
-            }
-
-            .sobre img {
-                object-fit: cover;
-                max-width: 50%;
-                margin: 0 1em;
-            }
-
-            .nossas-lojas {
-                max-width: 95%;
-            }
-
-        }
-    </style>
+    <title>Julezzo</title>
+    
 </head>
-
-
 <body>
     <header>
-        <div class="container-header">
-            <h1>JULEZZO</h1>
-        <nav>
-            <ul>
-                <li><a href="#">SOBRE</a></li>
-                <li><a href="#">SAPATOS</a></li>
-                <li><a href="#">BOLSAS</a></li>
-                <li><a id="outlet" href="#">OUTLET</a></li>
-            </ul>
-        </nav>
-        <a href="#">
-            <img src="./images/sacola.png" alt="Sacola de compras">
-        </a>
+        <div class="container">
+            <h1>Julezzo</h1>
+            <nav>
+                <ul class="menu">
+                    <li>SOBRE NÓS
+                        <ul class="submenu">
+                            <li><a href="#sobre">Nossa história</a></li>
+                            <li><a href="#">Nossas unidades</a></li>
+                            <li><a href="#">Trabalhe conosco</a></li>
+                            <li><a href="#">Seja um franqueado</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </li>
+                    <li>PRODUTOS
+                        <ul class="submenu">
+                            <li><a href="#">Sapatos</a></li>
+                            <li><a href="#">Bolsas</a></li>
+                            <li><a href="#">Roupas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <aside>
+                <img src="./images/sacola.png" alt="sacola de compras">
+            </aside>
         </div>
     </header>
-    <div id="carousel-images">
-        <img src="./images/carousel1.png" alt="Imagens de bolsas e sapatos com a tarja da promoção">
-        <img src="./images/carousel2.png" alt="Imagem de 50% off mais tarja da promoção">
-        <img src="./images/carousel3.png" alt="Imagem de rasteirinha com a informação da promoção">
-        <img src="./images/carousel4.png" alt="Imagem de bolsa com a informação da promoção">
+    <div class="carousel">
+        <div class="carousel-images1">
+            <img src="./images/carousel1.png" alt="Divulgação de promoções">
+            <img src="./images/carousel2.png" alt="Divulgação de promoções">
+            <img src="./images/carousel3.png" alt="Divulgação de promoções">
+            <img src="./images/carousel4.png" alt="Divulgação de promoções">
+        </div>
+        <div class="carousel-images2">
+            <img src="./images/carousel2.png" alt="Divulgação de promoções">
+            <img src="./images/carousel3.png" alt="Divulgação de promoções">
+            <img src="./images/carousel4.png" alt="Divulgação de promoções">
+            <img src="./images/carousel1.png" alt="Divulgação de promoções">
+        </div>
     </div>
-    <section class="sobre">
-        <img src="./images/loja.jpg" alt="Imagem da loja de sapato">
-        <div class="container-sobre">
-            <h3>Sobre a loja</h3>
-            <hr size="1" width="100%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolor ut necessitatibus eos vitae, 
-                ipsa minus consequuntur labore tenetur a tempora quisquam libero impedit explicabo enim ratione esse. 
-                Voluptatem, maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta molestias animi 
-                labore tempore recusandae iste dolorem. Excepturi ab ducimus, delectus perspiciatis quibusdam numquam 
-                officia, reprehenderit, nobis esse ea rerum unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Corrupti dolor ut necessitatibus eos vitae, ipsa minus consequuntur labore tenetur a tempora quisquam 
-                libero impedit explicabo enim ratione esse. 
-                Voluptatem, maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta molestias animi 
-                labore tempore recusandae iste dolorem. Excepturi ab ducimus, delectus perspiciatis quibusdam numquam 
-                officia, reprehenderit, nobis esse ea rerum unde.</p>
-            
+    <div class="container sobre-a-loja" id="sobre">
+        <img src="./images/loja.jpg" alt="Imagem da loja">
+        <div class="texto-sobre-a-loja">
+            <h3>Nossa história</h3>
+            <hr>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis 
+            accusamus numquam commodi consectetur error deleniti aliquam 
+            exercitationem optio officia, facere sunt! Architecto, perferendis. 
+            Voluptatem ipsum totam perferendis? Officia, qui nulla. Officia, qui nulla.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit sequi 
+            nulla quo voluptates eveniet. Quia corporis dolor repudiandae quam nam 
+            sequi enim autem debitis! Optio laudantium perferendis quasi. Sequi, 
+            adipisci? Officia, qui nulla. Officia, qui nulla. Officia, qui nulla.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis 
+            accusamus numquam commodi consectetur error deleniti aliquam 
+            exercitationem optio officia, facere sunt! Architecto, perferendis. 
+            Voluptatem ipsum totam perferendis? Officia, qui nulla! Officia, qui nulla.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit sequi nulla quo voluptates eveniet. Quia corporis dolor repudiandae quam nam sequi enim autem debitis! Optio laudantium perferendis quasi. Sequi, adipisci?</p>
         </div>
-    </section>
-    <hr size="1" width="95%">
-    <section class="nossas-lojas">
-        <div class="container-locais">
-            <h3>Encontre uma de nossas lojas</h3>
-            <select id="estado" name="estado">
-                <option value="AM">Amazonas</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PR">Paraná</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-            </select>
-        </div>
-        <img src="./images/brasil.png" alt="Mapa do Brasil">
-    </section>
-    <section class="titulos">
-        <hr size="1" width="100%">
-        <h3>Trabalhe conosco</h3>
-        <hr size="1" width="100%">
-        <h3>Preencha a ficha de inscrição abaixo</h3>
-    </section>
-    <section class="trabalhe-conosco">
-        <form>
-            <div class="form-campo-linha-1">
-                <label for="nome">Nome completo</label>
-                <input type="text" id="nome" name="nome" placeholder=" ">
-            </div>
-            <div class="form-campo-linha-1">
-                <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" name="telefone" placeholder=" ">
-            </div>
-            <div class="form-campo-linha-2">
-                <label for="email">E-mail</label>
-                <input type="text" id="email" name="email" placeholder=" ">
-            </div>
-            <div class="form-campo-linha-2">
-                <label for="cargo">Cargo Pretendido</label>
-                <input type="text" id="cargo" name="cargo" placeholder=" ">
-            </div>
-            <div class="mensagem">
-                <label for="cargo">Fale um pouco sobre você</label>
-                <textarea name="mensagem" id="mensagem"></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-    <section class="container-sapatos">
-        <div class="sapatos">
-            <hr size="1" width="100%">
-            <h3>Sapatos</h3>
-            <ul class="container-itens">
-                <li>
-                    <img src="./images/sapato1.webp" alt="Sandália marrom de amarração">
-                    <h4>Sandália Rasteira Marrom Multi Tiras Amarração</h4>
-                    <p>R$ 149,90</p>
-                    <p>
-                        <button type="button"> <img src="./images/sacola.png" alt="Sacola de compras">Adicionar à sacola</button>
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/sapato2.webp" alt="Sandália branca de amarração">
-                    <h4>Sandália Off-White Salto Fino Amarração</h4>
-                    <p>R$ 199,90</p>
-                    <p>
-                        <button type="button"> <img src="./images/sacola.png" alt="Sacola de compras">Adicionar à sacola</button>
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/sapato3.webp" alt="Sandália animal print snake">
-                    <h4>Sandália Colorida Snake Meia Pata Tiras</h4>
-                    <p>R$ 229,90</p>
-                    <p>
-                        <button type="button"> <img src="./images/sacola.png" alt="Sacola de compras">Adicionar à sacola</button>
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/sapato4.webp" alt="Mocassim Bege">
-                    <h4>Mocassim Bege Tramado Detalhe</h4>
-                    <p>R$ 199,90</p>
-                    <div class="container-bt">
-                        <button type="button"> <img src="./images/sacola.png" alt="Sacola de compras"><p>Adicionar à sacola</p></button>
-                    </div>                   
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="container-bolsas">
-        <div class="bolsas">
-            <hr size="1" width="100%">
-            <h3>Bolsas</h3>
-            <ul class="container-itens">
-                <li>
-                    <img src="./images/bolsa1.webp" alt="Bolsa shopping rosa">
-                    <h4>Bolsa Shopping Rosa Couro Croco Grande</h4>
-                    <p>R$ 379,90</p>
-                    <p>
-                        <button type="button"> <img src="./images/sacola.png" alt="Sacola de compras">Adicionar à sacola</button>
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/bolsa2.webp" alt="Bolsa tote laraja">
-                    <h4>Bolsa Tote Laranja Couro Milan Grande</h4>
-                    <p>R$ 999,90</p>
-                    <p>
-                        <button type="button"> <img src="./images/sacola.png" alt="Sacola de compras">Adicionar à sacola</button>
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/bolsa3.webp" alt="Bolsa tiracolo preta">
-                    <h4>Bolsa Tiracolo Preta Mirela Pequena</h4>
-                    <p>Indisponível</p>
-                    <p>
-                        <button type="button"> <img src="./images/sacola.png" alt="Sacola de compras">Adicionar à sacola</button>
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/bolsa4.webp" alt="Bolsa tiracolo branca">
-                    <h4>Bolsa Tiracolo Branca Couro Snake Média</h4>
-                    <p>R$ 999,90</p>
-                    <div class="container-bt">
-                        <button type="button"> <img src="./images/sacola.png" alt="Sacola de compras"><p>Adicionar à sacola</p></button>
-                    </div>                   
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="container-outlet">
-        <div class="outlet">
-            <hr size="1" width="100%">
-            <h3>Outlet</h3>
-            <ul class="container-itens">
-                <li>
-                    <img src="./images/outlet1.webp" alt="Sandália rasteira preta">
-                    <h4>Sandália Rasteira Preta Amarração Pedraria</h4>
-                    <p><s>R$ 439,90</s><font color="red"> R$ 219,90</font></p>
-                    <p>
-                        <button type="button"> <img src="./images/sacola.png" alt="Sacola de compras">Adicionar à sacola</button>
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/outlet2.webp" alt="Sandália rasteira nude com pedraria">
-                    <h4>Sandália Rasteira Nude Tiras Multi Pedraria</h4>
-                    <p><s>R$ 319,90</s> <font color="red">R$ 159,90</font></p>
-                    <p>
-                        <button type="button"> <img src="./images/sacola.png" alt="Sacola de compras">Adicionar à sacola</button>
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/outlet3.webp" alt="Mule Nude">
-                    <h4>Mule Nude Tramada Bridão</h4>
-                    <p><s>R$ 299,90</s> <font color="red"> R$ 149,90</font></p>
-                    <p>
-                        <button type="button"> <img src="./images/sacola.png" alt="Sacola de compras">Adicionar à sacola</button>
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/outlet4.webp" alt="Bolsa bowling azul">
-                    <h4>Bolsa Bowling Azul Megan Grande</h4>
-                    <p><s>R$ 499,90</s><font color="red"> R$ 249,90</font></p>
-                    <div class="container-bt">
-                        <button type="button"> <img src="./images/sacola.png" alt="Sacola de compras"><p>Adicionar à sacola</p></button>
-                    </div>                   
-                </li>
-            </ul>
-        </div>
-    </section>
+    </div>
+    <div class="container produtos">
+        <hr>
+        <h3>Produtos</h3>
+    </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/messages_pt_BR.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

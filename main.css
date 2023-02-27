@@ -5,22 +5,23 @@
     padding: 0;
     font-weight: bold;
 }
-
-
-.container {
+.header,
+.rodape {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-}
-
-header .container {
     display: flex;
     background-color: black;
     color: wheat;
     justify-content: center;
     align-items: flex-start;
 }
-
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
 header {
     padding: 16px 0;
     justify-content: space-around;
@@ -85,6 +86,7 @@ aside img {
 
 .carousel {
     z-index: 10;
+    overflow-x: hidden;
 }
 
 .sobre-a-loja {
@@ -93,6 +95,7 @@ aside img {
     margin-top: 2em;
     text-align: justify;
     justify-content: space-around;
+    overflow-x: hidden;
 }
 
 .sobre-a-loja img {
@@ -165,6 +168,33 @@ li button:hover {
     border-radius: 6px;
 }
 
+footer {
+    background-color: black;
+}
+
+.rodape {
+    padding: 1em;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+.contatos-rodape ul {
+    display: flex;
+}
+
+.contatos-rodape li {
+    list-style: none;
+}
+
+.contatos-rodape img {
+    width: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.rodape h5 {
+    margin-left: 10px;
+}
 
 @media screen and (min-width: 1024px) {
     .carousel {
@@ -181,6 +211,7 @@ li button:hover {
 }
 
 @media screen and (max-width: 767px) { /* celulares*/
+    
     .carousel-images2 {
         display: none;
     }
@@ -217,9 +248,15 @@ li button:hover {
         align-items: center;
     }
 
+    .contatos-rodape img {
+        width: 30px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1023px) { /* tablets */
+    
     .carousel-images2 {
         display: none;
     }
@@ -237,15 +274,3 @@ li button:hover {
     }
 
 }
-
-
-    /*
-    padding-top: 10px;
-    padding-left: 7em; */
-/*
-@media screen and (max-width: 640px) {
-    aside img {
-        width: 3em;
-        padding-left: 1em;
-    }
-} */
